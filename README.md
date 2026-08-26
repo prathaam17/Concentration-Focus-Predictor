@@ -22,7 +22,7 @@ This project leverages survey data from students and working professionals to co
 - **Interactive Streamlit Web Dashboard**: Sleek, minimalistic form interface built for real-time predictions.
 - **Actionable Productivity Feedback**: Instant tailored tips based on user-selected habits (e.g. phone checks, multitasking, notification frequency).
 - **Feature Importance Analytics**: Visual breakdown highlighting top drivers influencing concentration.
-- **Robust Encoding Sanitization**: Preprocesses special character en-dashes and missing dataset values smoothly.
+- **Sanitized Encoding**: Clean handling of non-ASCII characters and dataset encodings.
 
 ---
 
@@ -80,6 +80,10 @@ Access the UI at `http://localhost:8501`.
 
 ---
 
-## 🤝 Contributing & License
+## 👤 Author
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/prathaam17/Concentration-Focus-Predictor/issues).
+Developed by **Pratham** ([@prathaam17](https://github.com/prathaam17))
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
