@@ -31,7 +31,7 @@ st.markdown("""
         padding: 2rem 2.5rem;
         border-radius: 16px;
         box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     .header-card h1 {
         color: #FFFFFF !important;
@@ -135,9 +135,19 @@ except Exception as e:
 st.markdown("""
 <div class="header-card">
     <h1>🎯 Concentration & Focus Predictor</h1>
-    <p>Predict your daily focus level based on work habits, digital distractions, and sleep patterns.</p>
+    <p>An interactive Machine Learning tool predicting daily focus ability based on work habits, digital friction, and sleep patterns.</p>
 </div>
 """, unsafe_allow_html=True)
+
+with st.expander("ℹ️ About this Project & Model"):
+    st.markdown("""
+    This application predicts your **Concentration Ability Rating (1 to 5)** using a `RandomForestClassifier` trained on real survey data.
+    
+    **Key Evaluated Factors:**
+    - 📱 **Digital Friction**: Daily screen time, phone check frequency, notification interruptions.
+    - ⏱️ **Work Habits**: Focused session duration, multitasking frequency, recovery time after distraction.
+    - 😴 **Sleep & Energy**: Daily sleep duration, morning refreshment level, pre-sleep phone usage.
+    """)
 
 # User Input Form
 st.markdown("### 📋 Enter Your Daily Habits & Environment")
